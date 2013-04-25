@@ -26,8 +26,15 @@ From Ringo.js:
 
 ```javascript
 var cs = require('ringo-coffee');
-var javascript = cs.compile('(name)-> "Hello #{name}"');
+
 var pows = cs.eval('[Math.pow num, 3 for num in [2,3,4]]');
+    // [ [ 8, 27, 64 ] ]
+
+var js = cs.compile('(name)-> "Hello #{name} !"', { bare: true });
+    // (function(name) {
+    //   return "Hello " + name + " !";
+    // });
+
 cs.run('console.dir "-> #{i}" for i of global');
 ```
 
