@@ -11,6 +11,8 @@ Installation
 Usage
 -----
 
+From the shell:
+
     $ ringo-coffee -h
 
     Usage: ringo-coffee [options] path/to/script.coffee
@@ -19,6 +21,15 @@ Usage
 
      -v --version  display the version number
      -h --help     Display help
+
+From Ringo.js:
+
+```javascript
+var cs = require('ringo-coffee');
+var pows = cs.eval('[Math.pow num, 3 for num in [2,3,4]]');
+
+cs.eval('console.dir "-> #{i}" for i of global')
+```
 
 License
 -------
