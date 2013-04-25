@@ -1,7 +1,5 @@
-Coffeescript for Ringo.js
-=========================
-
-**ringo-coffee** brings [CoffeeScript](http://coffeescript.org) to [Ringo.js](http://ringojs.org) !
+[CoffeeScript](http://coffeescript.org) for[Ringo.js](http://ringojs.org)
+=========================================================================
 
 Installation
 ------------
