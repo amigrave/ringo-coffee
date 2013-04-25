@@ -19,8 +19,12 @@ From the shell:
 
     If called without options, `ringo-coffee` will run your script.
 
-     -v --version  display the version number
-     -h --help     Display help
+     -b --bare           compile without a top-level function wrapper
+     -c --compile        compile to JavaScript and save as .js files
+     -h --help           Display help
+     -o --output OUTPUT  set the output directory for compiled JavaScript
+     -p --print          print out the compiled JavaScript
+     -v --version        display the version number
 
 From Ringo.js:
 
