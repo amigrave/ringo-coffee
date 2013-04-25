@@ -1,5 +1,7 @@
-[CoffeeScript](http://coffeescript.org) for[Ringo.js](http://ringojs.org)
-=========================================================================
+CoffeeScript handler for Ringo.js
+=================================
+
+**ringo-coffee** is a [CoffeeScript](http://coffeescript.org) handler/compiler/runner for [Ringo.js](http://ringojs.org)
 
 Installation
 ------------
@@ -24,9 +26,9 @@ From Ringo.js:
 
 ```javascript
 var cs = require('ringo-coffee');
+var javascript = cs.compile('(name)-> "Hello #{name}"');
 var pows = cs.eval('[Math.pow num, 3 for num in [2,3,4]]');
-
-cs.eval('console.dir "-> #{i}" for i of global')
+cs.run('console.dir "-> #{i}" for i of global');
 ```
 
 License
